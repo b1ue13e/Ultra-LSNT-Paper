@@ -4,6 +4,8 @@
 
 **Ultra-Lightweight Sparse Neural Transformer for Controller-Side Wind Power Forecasting**
 
+> For reproducible results as presented in: *"Wind power forecasting under corrupted SCADA for edge deployment: sparse MoE with feasibility guidance"*, **Applied Energy** (2026).
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg?logo=pytorch)](https://pytorch.org/)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776ab.svg?logo=python)](https://www.python.org/)
