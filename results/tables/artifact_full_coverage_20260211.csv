@@ -1,7 +1,7 @@
 category,path,ext,size_bytes
 "ablation","ablation_fixed_output.log",".log",568
 "ablation","ablation_output.log",".log",2840
-"ablation","comprehensive_ablation_results_parallel.csv",".csv",1
+"ablation","comprehensive_ablation_results.csv",".csv","运行后生成"
 "ablation","logs/run_ablation_study_20260124_182852.log",".log",568
 "ablation","logs/run_ablation_study_20260124_183654.log",".log",10573
 "ablation","logs/run_ablation_study_20260124_214127.log",".log",10573
