@@ -44,7 +44,7 @@
   - 混合专家机制
   - 双模传播
   - FiLM 适配
-- **输出**: `results/tables/comprehensive_ablation_results_parallel.csv`
+- **输出**: `results/tables/comprehensive_ablation_results.csv` (生成于运行后)
 
 ### 3.2 并行消融实验
 - **脚本**: `src/experiments/run_comprehensive_ablation_parallel.py`
