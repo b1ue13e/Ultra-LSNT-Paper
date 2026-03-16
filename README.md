@@ -46,12 +46,6 @@ This repository contains the code, data assets, and evaluation scripts accompany
 
 > **"Wind power forecasting under corrupted SCADA for edge deployment: sparse MoE with feasibility guidance"**
 
-<p align="center">
-  <img src="results/figures/workflow_pipeline.pdf" width="90%" alt="Workflow Pipeline">
-  <br>
-  <em>Figure 1: End-to-end workflow — from corrupted SCADA input to dispatch screening output</em>
-</p>
-
 The project studies a **controller-side** forecasting setting in which models must operate on **corrupted SCADA streams** under **batch-1 latency and memory constraints**, and forecast usefulness is evaluated under a **fixed forecast-to-dispatch interface**.
 
 ### Core Design
@@ -142,19 +136,13 @@ Direct batch-1 measurements for same-stack hardware comparison:
 
 ### 4. Dispatch-Screening Interpretation
 
-Under the shared mapped-and-clipped downstream interface:
+<p align="center">
+  <img src="results/figures/workflow_pipeline.pdf" width="90%" alt="Workflow Pipeline">
+  <br>
+  <em>Figure 3: Fixed-interface dispatch screening workflow — from raw forecasts to admissibility check</em>
+</p>
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│  Fixed-Interface Dispatch Screening Workflow                 │
-├─────────────────────────────────────────────────────────────┤
-│  Raw Forecasts → Mapping Function → Clipping → Screening    │
-│       ↓              ↓               ↓           ↓          │
-│   (All models    (Shared)        (Shared)    RTS-24 DC     │
-│    fail closure              interface)     Admissibility   │
-│    before map)                                 Check        │
-└─────────────────────────────────────────────────────────────┘
-```
+Under the shared mapped-and-clipped downstream interface:
 
 Screening outcomes under the fixed interface:
 
