@@ -1,0 +1,13 @@
+dataset,model,latency_ms_batch1,model_size_mib,active_params_m,energy_mj_sample
+air_quality,BWO-CNN,14.0,5.28,1.2,600.0
+air_quality,BWO-SVR,9.18,4.4,1.0,500.0
+air_quality,COA-BiLSTM,21.86,6.6,1.5,750.0
+electricity,BWO-CNN,13.33,5.28,1.2,600.0
+electricity,BWO-SVR,9.17,4.4,1.0,500.0
+electricity,COA-BiLSTM,24.8,6.6,1.5,750.0
+gefcom,BWO-CNN,12.91,5.28,1.2,600.0
+gefcom,BWO-SVR,9.25,4.4,1.0,500.0
+gefcom,COA-BiLSTM,25.1,6.6,1.5,750.0
+wind_cn,BWO-CNN,15.33,5.28,1.2,600.0
+wind_cn,BWO-SVR,10.72,4.4,1.0,500.0
+wind_cn,COA-BiLSTM,27.64,6.6,1.5,750.0

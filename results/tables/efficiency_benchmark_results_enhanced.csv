@@ -1,0 +1,2 @@
+device,avg_inference_time_ms,std_inference_time_ms,avg_epoch_time_sec,total_training_time_sec,epochs,model_parameters,trainable_parameters,cpu_memory_usage_mb,gpu_memory_usage_mb,batch_size,sequence_length
+cuda,15.29369191069838,3.612972387190239,27.424979562498628,274.2497956249863,10,34491317,34491317,0.0,0.0,128,96

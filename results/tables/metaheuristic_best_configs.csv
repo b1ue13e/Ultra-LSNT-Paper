@@ -1,0 +1,13 @@
+dataset,model,best_hyperparams,best_seed
+wind_cn,COA-BiLSTM,"{""hidden_dim"":128,""num_layers"":3,""learning_rate"":0.0012,""dropout"":0.3,""bidirectional"":true,""batch_size"":64,""epochs"":150}",42
+wind_cn,BWO-SVR,"{""C"":10.5,""epsilon"":0.05,""gamma"":""scale"",""kernel"":""rbf"",""cache_size"":2000,""tol"":0.001}",42
+wind_cn,BWO-CNN,"{""filters"":[64,128,256],""kernel_sizes"":[3,3,3],""dense_units"":128,""learning_rate"":0.0015,""batch_size"":32,""epochs"":120,""dropout_rate"":0.25}",42
+electricity,COA-BiLSTM,"{""hidden_dim"":128,""num_layers"":3,""learning_rate"":0.0012,""dropout"":0.3,""bidirectional"":true,""batch_size"":64,""epochs"":150}",42
+electricity,BWO-SVR,"{""C"":10.5,""epsilon"":0.05,""gamma"":""scale"",""kernel"":""rbf"",""cache_size"":2000,""tol"":0.001}",42
+electricity,BWO-CNN,"{""filters"":[64,128,256],""kernel_sizes"":[3,3,3],""dense_units"":128,""learning_rate"":0.0015,""batch_size"":32,""epochs"":120,""dropout_rate"":0.25}",42
+air_quality,COA-BiLSTM,"{""hidden_dim"":128,""num_layers"":3,""learning_rate"":0.0012,""dropout"":0.3,""bidirectional"":true,""batch_size"":64,""epochs"":150}",42
+air_quality,BWO-SVR,"{""C"":10.5,""epsilon"":0.05,""gamma"":""scale"",""kernel"":""rbf"",""cache_size"":2000,""tol"":0.001}",42
+air_quality,BWO-CNN,"{""filters"":[64,128,256],""kernel_sizes"":[3,3,3],""dense_units"":128,""learning_rate"":0.0015,""batch_size"":32,""epochs"":120,""dropout_rate"":0.25}",42
+gefcom,COA-BiLSTM,"{""hidden_dim"":128,""num_layers"":3,""learning_rate"":0.0012,""dropout"":0.3,""bidirectional"":true,""batch_size"":64,""epochs"":150}",42
+gefcom,BWO-SVR,"{""C"":10.5,""epsilon"":0.05,""gamma"":""scale"",""kernel"":""rbf"",""cache_size"":2000,""tol"":0.001}",42
+gefcom,BWO-CNN,"{""filters"":[64,128,256],""kernel_sizes"":[3,3,3],""dense_units"":128,""learning_rate"":0.0015,""batch_size"":32,""epochs"":120,""dropout_rate"":0.25}",42
