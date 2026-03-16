@@ -143,14 +143,10 @@ Ultra-LSNT-Paper/
 │   ├── main_PI-MoE_final_AE_ready_build.pdf
 │   └── ultra_lsnt_architecture_tikz_fix4.pdf
 │
-└── docs/                               # 文档 (7 files)
-    ├── TECHNICAL_REPORT.md
-    ├── EXPERIMENTAL_RESULTS_COMPREHENSIVE.md
-    ├── COMPLETE_EXECUTION_SUMMARY.md
-    ├── FINAL_REPORT.md
-    ├── ALL_EXPERIMENTS_AND_CODE_SUMMARY.md
-    ├── DETAILED_EXPERIMENT_SUMMARY_ANALYSIS.md
-    └── EXPERIMENT_RESULTS_MASTER_REPORT_20260303.md
+└── docs/                               # 文档 (3 files)
+    ├── TECHNICAL_REPORT.md               # 技术报告
+    ├── FINAL_REPORT.md                   # 最终报告
+    └── EXPERIMENT_RESULTS_MASTER_REPORT_20260303.md  # 主实验报告
 ```
 
 ## 文件统计
@@ -165,7 +161,7 @@ Ultra-LSNT-Paper/
 | results/tables | 16 | 实验结果表格(CSV) |
 | scripts | 6 | Shell运行脚本 |
 | paper | 5 | 论文LaTeX和PDF |
-| docs | 7 | 技术报告和文档 |
+| docs | 3 | 技术报告和文档 |
 | **总计** | **101** | **核心文件** |
 
 ## 存储占用
