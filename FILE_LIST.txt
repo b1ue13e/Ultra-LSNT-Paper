@@ -1,4 +1,5 @@
-﻿.gitignore                                                                      573 bytes
+﻿.gitattributes                                                                   66 bytes
+.gitignore                                                                    3,961 bytes
 DATA.md                                                                       6,892 bytes
 data/processed/air_quality_expert_activation.csv                              2,076 bytes
 data/processed/air_quality_ready.csv                                     21,007,435 bytes
@@ -7,23 +8,14 @@ data/processed/processed_wind.csv                                        13,901,
 data/processed/wind_expert_activation.csv                                     2,072 bytes
 data/processed/wind_final.csv                                             5,238,247 bytes
 data/processed/wind_us.csv                                               10,506,524 bytes
-docs/ALL_EXPERIMENTS_AND_CODE_SUMMARY.md                                     17,247 bytes
-docs/COMPLETE_EXECUTION_SUMMARY.md                                           12,418 bytes
-docs/DETAILED_EXPERIMENT_SUMMARY_ANALYSIS.md                                 19,786 bytes
 docs/EXPERIMENT_RESULTS_MASTER_REPORT_20260303.md                            65,583 bytes
-docs/EXPERIMENTAL_RESULTS_COMPREHENSIVE.md                                   10,043 bytes
 docs/FINAL_REPORT.md                                                          8,274 bytes
 docs/TECHNICAL_REPORT.md                                                      9,742 bytes
-EXPERIMENTS.md                                                                7,940 bytes
+EXPERIMENTS.md                                                                7,952 bytes
 GITHUB_UPLOAD_GUIDE.md                                                        5,777 bytes
-LICENSE                                                                       1,096 bytes
-paper/cas-refs.bib                                                           37,854 bytes
-paper/main_PI-MoE_final_AE_ready.tex                                        100,306 bytes
-paper/main_PI-MoE_final_AE_ready_build.pdf                                2,142,503 bytes
-paper/supplementary_material.tex                                             29,463 bytes
-paper/ultra_lsnt_architecture_tikz_fix4.pdf                                 215,136 bytes
+LICENSE                                                                       1,084 bytes
 QUICKSTART.md                                                                 2,333 bytes
-README.md                                                                    10,787 bytes
+README.md                                                                     6,803 bytes
 requirements.txt                                                                487 bytes
 results/figures/fig_ablation.pdf                                             34,036 bytes
 results/figures/fig_dispatch_economics.pdf                                   53,486 bytes
@@ -36,9 +28,8 @@ results/figures/Figure_4_Final.pdf                                           39,
 results/figures/Figure_5_Final.pdf                                           48,036 bytes
 results/figures/tau_sweep_ultra_pareto_v3.pdf                                37,340 bytes
 results/tables/all_models_clean_80_20.csv                                       607 bytes
-results/tables/artifact_full_coverage_20260211.csv                           42,532 bytes
+results/tables/artifact_full_coverage_20260211.csv                           42,539 bytes
 results/tables/coa_bwo_search_trace.csv                                     468,431 bytes
-
 results/tables/dispatch_rolling_80_20.csv                                     6,754 bytes
 results/tables/dispatch_rts24_80_20.csv                                      10,516 bytes
 results/tables/efficiency_benchmark_results_enhanced.csv                        320 bytes
@@ -55,7 +46,7 @@ scripts/clean_and_plot.sh                                                    11,
 scripts/run_all.sh                                                           17,644 bytes
 scripts/run_all_fixed.sh                                                     15,597 bytes
 scripts/run_all_plots_final.sh                                               11,610 bytes
-scripts/run_complete.sh                                                      19,639 bytes
+scripts/run_complete.sh                                                      20,249 bytes
 scripts/run_perfect.sh                                                       29,443 bytes
 src/baselines/bwo_algorithm.py                                               10,117 bytes
 src/baselines/bwo_cnn_experiment.py                                          24,034 bytes
@@ -114,4 +105,5 @@ src/noise_utils.py                                                            1,
 src/unified_split_utils.py                                                    5,519 bytes
 src/wind_dispatch_model.py                                                   23,418 bytes
 src/windcn_audit_common.py                                                    5,958 bytes
-STRUCTURE.md                                                                 10,065 bytes
+STRUCTURE.md                                                                  9,954 bytes
+SUMMARY.md                                                                    4,271 bytes
