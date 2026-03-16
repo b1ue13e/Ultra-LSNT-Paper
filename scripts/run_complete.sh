@@ -276,14 +276,14 @@ def load_economics_data():
     # 模拟数据 (实际应从实验结果文件读取)
     data = {
         'Ultra-LSNT': {
-            'R2': 0.8728,
+            'R2': 0.9346,  # 论文最终审计数据
             'FLOPs': 1.2e9,  # 估计值
             'Power_W': 3.8,
             'Annual_Penalty_Reduction': 150000,  # 年度罚款减少额（美元）
             'Cost_Reduction_Percent': 12.8
         },
         'DLinear': {
-            'R2': 0.9400,
+            'R2': 0.9494,  # 论文Table 2数据
             'FLOPs': 0.8e9,
             'Power_W': 2.1,
             'Annual_Penalty_Reduction': 0,  # 基准
