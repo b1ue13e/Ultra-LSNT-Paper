@@ -147,7 +147,7 @@ If you find Ultra-LSNT or our SCADA noise robustness protocol useful in your res
   title={Wind power forecasting under corrupted SCADA for edge deployment: sparse MoE with feasibility guidance},
   author={Li, Junyu and Du, Juntao},
   journal={Applied Energy},
-  year={2025}
+  year={2026}
 }
 ```
 
