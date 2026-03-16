@@ -7,8 +7,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg?logo=pytorch)](https://pytorch.org/)
 [![Python](https://img.shields.io/badge/Python-3.8+-3776ab.svg?logo=python)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/Status-Research%20Code-blue.svg)]()
-[![Paper](https://img.shields.io/badge/Paper-Applied%20Energy-green.svg)]()
+[![Status](https://img.shields.io/badge/Status-Research%20Code-blue.svg)](#)
+[![Paper](https://img.shields.io/badge/Paper-Applied%20Energy-green.svg)](#)
 
 *Sparse MoE forecasting under corrupted SCADA for edge deployment*
 
@@ -289,7 +289,8 @@ If you use this repository or the corrupted-SCADA evaluation protocol, please ci
              sparse MoE with feasibility guidance},
   author  = {Li, Junyu and Du, Juntao},
   journal = {Applied Energy},
-  year    = {2026}
+  year    = {2026},
+  note    = {Under review}
 }
 ```
 
