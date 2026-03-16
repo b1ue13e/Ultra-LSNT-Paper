@@ -38,7 +38,7 @@ results/figures/tau_sweep_ultra_pareto_v3.pdf                                37,
 results/tables/all_models_clean_80_20.csv                                       607 bytes
 results/tables/artifact_full_coverage_20260211.csv                           42,532 bytes
 results/tables/coa_bwo_search_trace.csv                                     468,431 bytes
-results/tables/comprehensive_ablation_results_parallel.csv                        1 bytes
+
 results/tables/dispatch_rolling_80_20.csv                                     6,754 bytes
 results/tables/dispatch_rts24_80_20.csv                                      10,516 bytes
 results/tables/efficiency_benchmark_results_enhanced.csv                        320 bytes
