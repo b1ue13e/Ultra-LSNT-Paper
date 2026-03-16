@@ -46,32 +46,21 @@ This repository contains the code, data assets, and evaluation scripts accompany
 
 > **"Wind power forecasting under corrupted SCADA for edge deployment: sparse MoE with feasibility guidance"**
 
+<p align="center">
+  <img src="results/figures/workflow_pipeline.pdf" width="90%" alt="Workflow Pipeline">
+  <br>
+  <em>Figure 1: End-to-end workflow — from corrupted SCADA input to dispatch screening output</em>
+</p>
+
 The project studies a **controller-side** forecasting setting in which models must operate on **corrupted SCADA streams** under **batch-1 latency and memory constraints**, and forecast usefulness is evaluated under a **fixed forecast-to-dispatch interface**.
 
 ### Core Design
 
-```
-┌─────────────────────────────────────────────────────────────────┐
-│                    Ultra-LSNT Architecture                       │
-├─────────────────────────────────────────────────────────────────┤
-│  Input: Corrupted SCADA Stream (Wind Speed, Power, Direction)   │
-│                         ↓                                        │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  Sparse Top-K Routing  →  Conditional Expert Selection  │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                         ↓                                        │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  Jump Gate Skipping    →  Reduced Avg. Inference Cost   │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                         ↓                                        │
-│  ┌─────────────────────────────────────────────────────────┐   │
-│  │  FG-MoE Training       →  Physical Feasibility Guidance │   │
-│  │  (deployable wind proxy available at inference)         │   │
-│  └─────────────────────────────────────────────────────────┘   │
-│                         ↓                                        │
-│  Output: Physically Admissible Power Forecast                    │
-└─────────────────────────────────────────────────────────────────┘
-```
+<p align="center">
+  <img src="results/figures/figure2.pdf" width="85%" alt="Ultra-LSNT Architecture">
+  <br>
+  <em>Figure 2: Ultra-LSNT Architecture — Sparse Top-K routing with Jump Gate skipping and FG-MoE training</em>
+</p>
 
 Ultra-LSNT is a sparse mixture-of-experts forecaster combining:
 
