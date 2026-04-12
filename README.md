@@ -1,82 +1,96 @@
 # Ultra-LSNT
 
-Ultra-LSNT is the public research repository accompanying the manuscript:
+Public reproducibility repository for the manuscript:
 
 > "Controller-side feasibility guidance for wind power forecasting under corrupted SCADA"
 
-The repository name retains the model identifier introduced during development, while the submitted paper emphasizes the controller-side feasibility-guidance contribution built around the Ultra-LSNT sparse forecasting backbone.
+Ultra-LSNT is the model family and experiment codebase behind the paper's controller-side forecasting study under corrupted SCADA conditions. The repository is organized for paper-aligned reproducibility rather than as a polished software package.
 
-## What this repository includes
+## At a glance
 
-- Ultra-LSNT and Ultra-LSNT-Lite implementations
-- Baseline models used in the main comparisons
-- Corrupted-SCADA robustness evaluation scripts
-- Batch-1 efficiency benchmarking scripts
-- Ablation and safety-analysis scripts
-- Secondary cross-domain diagnostic experiments
-- Released data assets and split manifests for reproducibility
+- Main model: Ultra-LSNT and Ultra-LSNT-Lite
+- Main task: controller-side wind power forecasting under corrupted SCADA
+- Public assets: code, released Wind (CN) data assets, processed benchmark datasets, split manifests, figures, and result tables
+- License: MIT
+
+## Start here
+
+- `QUICKSTART.md` for the fastest local setup
+- `DATA.md` for released datasets and split manifests
+- `EXPERIMENTS.md` for the main experiment scripts
+- `STRUCTURE.md` for a repository map
+- `docs/README.md` for archived reports and supplementary notes
+
+## What is in this repository
+
+- Ultra-LSNT model implementations
+- Baseline comparison scripts
+- Corrupted-SCADA robustness evaluation
+- Batch-1 efficiency benchmarking
+- Ablation and feasibility-oriented experiments
+- Cross-domain diagnostic experiments
+- Public reproducibility assets referenced by the paper
 
 ## Repository layout
 
 ```text
 Ultra-LSNT/
-|- src/                          Core models and experiment scripts
-|- scripts/                      Helper scripts
+|- src/                          Models, baselines, experiments, utilities
+|- scripts/                      Batch helper scripts
 |- data/
-|  |- raw/                       Raw released Wind (CN) time series
-|  `- processed/                 Processed datasets used by experiments
-|- results/                      Figures, tables, and derived outputs
+|  |- raw/                       Raw Wind (CN) release
+|  `- processed/                 Processed data tables
+|- results/
+|  |- figures/                   Paper-facing figures
+|  `- tables/                    Reported and supporting result tables
+|- docs/                         Archived reports and internal notes
 |- split_manifest_80_20.json
 |- split_manifest_80_20_unified.json
-|- wind_main.csv                 Legacy convenience copy for scripts
-|- wind_final.csv                Legacy convenience copy for scripts
-|- wind_us.csv                   Legacy convenience copy for scripts
-|- air_quality_ready.csv         Legacy convenience copy for scripts
-|- gefcom_ready.csv              Legacy convenience copy for scripts
-`- processed_wind.csv            Legacy convenience copy for scripts
+`- root-level compatibility CSV files for older scripts
 ```
 
-The canonical data location is `data/`. A small set of root-level CSV copies is intentionally retained so that legacy experiment scripts in this repository continue to run without path edits.
+The canonical data location is `data/`. Root-level CSV copies are intentionally retained only to preserve compatibility with older scripts that expect those filenames in the repository root.
 
 ## Data availability
 
-### Wind (CN)
+### Main Wind (CN) assets
 
-The repository includes the following assets for the main Wind (CN) study:
-
-- Raw SCADA-like time series: `data/raw/wind_main.csv`
-- Processed forecasting tables: `data/processed/wind_final.csv` and `data/processed/processed_wind.csv`
-- Public split manifests:
+- Raw time series: `data/raw/wind_main.csv`
+- Processed tables:
+  - `data/processed/wind_final.csv`
+  - `data/processed/processed_wind.csv`
+- Chronological split manifests:
   - `split_manifest_80_20.json`
   - `split_manifest_80_20_unified.json`
-- Preprocessing code: `src/data_preprocess.py`
+- Preprocessing entry point: `src/data_preprocess.py`
 
-### Diagnostic benchmark datasets
-
-Processed benchmark files used for the secondary diagnostic experiments are stored at:
+### Secondary diagnostic datasets
 
 - `data/processed/wind_us.csv`
 - `data/processed/air_quality_ready.csv`
 - `data/processed/gefcom_ready.csv`
 
-## Quick start
+## Quick setup
 
 ```bash
 git clone https://github.com/b1ue13e/Ultra-LSNT.git
 cd Ultra-LSNT
 pip install -r requirements.txt
+python src/experiments/run_multi_domain_baselines.py --help
 ```
 
-## Main reproduction commands
+If the last command prints the argument list, the public repository layout is working as intended.
+
+## Main entry points
 
 ```bash
-# Main Ultra-LSNT training on Wind (CN)
+# Main Wind (CN) training
 python src/experiments/train_ultra_lsnt_stable.py
 
-# Corrupted-SCADA robustness experiments
+# Corrupted-SCADA robustness
 python src/experiments/run_universal_robustness.py
 
-# Batch-1 efficiency benchmark
+# Efficiency benchmark
 python src/experiments/run_efficiency_benchmark.py
 
 # Ablation study
@@ -88,14 +102,14 @@ python src/experiments/run_multi_domain_baselines.py
 
 ## Reproducibility notes
 
-- The repository uses chronological 80/20 splits for the released datasets.
-- The split definitions used in the paper are provided through the checked-in manifest files.
-- Some scripts were developed during manuscript preparation and keep older default file names; the root-level convenience copies are present to preserve backward compatibility.
-- Results in the paper should be interpreted as bounded controller-side evidence under the reported protocol, not as operator-grade deployment validation.
+- The released evaluation protocol follows chronological 80/20 splitting.
+- Split definitions used in the paper are included directly in the checked-in manifest files.
+- Several scripts were developed during manuscript preparation and still expect root-level filenames such as `wind_final.csv`; compatibility copies are retained for that reason.
+- The repository is intended to support inspection and reruns of the paper's workflows, not to claim production-grade deployment readiness.
 
 ## Citation
 
-If you use this repository, the corrupted-SCADA evaluation protocol, or the released data assets, please cite:
+If you use this repository, the released data assets, or the corrupted-SCADA evaluation workflow, please cite:
 
 ```bibtex
 @article{li2026ultralsnt,
