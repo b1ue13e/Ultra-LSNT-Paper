@@ -1,0 +1,160 @@
+{
+  "manifest_version": "1.0",
+  "split_policy": "time_ordered_80_20",
+  "policy_description": "All datasets use chronological 80/20 split. First 80% of time-ordered data for training, last 20% for testing. This prevents lookahead bias and ensures fair comparison across all models.",
+  "datasets": [
+    {
+      "name": "wind_cn",
+      "file": "processed_wind.csv",
+      "target_column": "power",
+      "time_column": null,
+      "total_samples": 121528,
+      "training_set": {
+        "samples": 97222,
+        "indices": "0:97222",
+        "ratio": 0.8,
+        "description": "First 97222 samples (80%)"
+      },
+      "test_set": {
+        "samples": 24306,
+        "indices": "97222:121528",
+        "ratio": 0.2,
+        "description": "Last 24306 samples (20%)"
+      },
+      "split_validation": {
+        "no_overlap": true,
+        "chronological": true,
+        "consistent_across_runs": true
+      },
+      "description": "\u4e2d\u56fd\u98ce\u7535\u6570\u636e\u96c6",
+      "time_boundaries": {
+        "train_start": "T0",
+        "train_end": "T97222",
+        "test_start": "T97222",
+        "test_end": "T121528"
+      }
+    },
+    {
+      "name": "electricity",
+      "file": "Load_history.csv",
+      "target_column": "load",
+      "time_column": null,
+      "total_samples": 33000,
+      "training_set": {
+        "samples": 26400,
+        "indices": "0:26400",
+        "ratio": 0.8,
+        "description": "First 26400 samples (80%)"
+      },
+      "test_set": {
+        "samples": 6600,
+        "indices": "26400:33000",
+        "ratio": 0.2,
+        "description": "Last 6600 samples (20%)"
+      },
+      "split_validation": {
+        "no_overlap": true,
+        "chronological": true,
+        "consistent_across_runs": true
+      },
+      "time_boundaries": {
+        "train_start": "T0",
+        "train_end": "T26400",
+        "test_start": "T26400",
+        "test_end": "T33000"
+      }
+    },
+    {
+      "name": "air_quality",
+      "file": "air_quality_ready.csv",
+      "target_column": "PM2.5",
+      "time_column": null,
+      "total_samples": 588644,
+      "training_set": {
+        "samples": 470915,
+        "indices": "0:470915",
+        "ratio": 0.8,
+        "description": "First 470915 samples (80%)"
+      },
+      "test_set": {
+        "samples": 117729,
+        "indices": "470915:588644",
+        "ratio": 0.2,
+        "description": "Last 117729 samples (20%)"
+      },
+      "split_validation": {
+        "no_overlap": true,
+        "chronological": true,
+        "consistent_across_runs": true
+      },
+      "time_boundaries": {
+        "train_start": "T0",
+        "train_end": "T470915",
+        "test_start": "T470915",
+        "test_end": "T588644"
+      }
+    },
+    {
+      "name": "gefcom",
+      "file": "gefcom_ready.csv",
+      "target_column": "load",
+      "time_column": "date",
+      "total_samples": 38070,
+      "training_set": {
+        "samples": 30456,
+        "indices": "0:30456",
+        "ratio": 0.8,
+        "description": "First 30456 samples (80%)"
+      },
+      "test_set": {
+        "samples": 7614,
+        "indices": "30456:38070",
+        "ratio": 0.2,
+        "description": "Last 7614 samples (20%)"
+      },
+      "split_validation": {
+        "no_overlap": true,
+        "chronological": true,
+        "consistent_across_runs": true
+      },
+      "time_boundaries": {
+        "train_start": "T0",
+        "train_end": "T30456",
+        "test_start": "T30456",
+        "test_end": "T38070"
+      }
+    },
+    {
+      "name": "wind_us",
+      "file": "wind_us.csv",
+      "target_column": "power (MW)",
+      "time_column": null,
+      "total_samples": 105121,
+      "training_set": {
+        "samples": 84096,
+        "indices": "0:84096",
+        "ratio": 0.8,
+        "description": "First 84096 samples (80%)"
+      },
+      "test_set": {
+        "samples": 21025,
+        "indices": "84096:105121",
+        "ratio": 0.2,
+        "description": "Last 21025 samples (20%)"
+      },
+      "split_validation": {
+        "no_overlap": true,
+        "chronological": true,
+        "consistent_across_runs": true
+      },
+      "time_boundaries": {
+        "train_start": "T0",
+        "train_end": "T84096",
+        "test_start": "T84096",
+        "test_end": "T105121"
+      }
+    }
+  ],
+  "created_at": "2026-02-23T02:30:51.962970",
+  "notes": "This manifest guarantees consistency across COA/BWO experiments and the 80/20 unified rerun."
+}
