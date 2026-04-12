@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript."
+title: "Ultra-LSNT"
+type: software
+authors:
+  - family-names: "Li"
+    given-names: "Junyu"
+  - family-names: "Du"
+    given-names: "Juntao"
+abstract: "Public reproducibility repository for controller-side wind power forecasting under corrupted SCADA using the Ultra-LSNT model family."
+repository-code: "https://github.com/b1ue13e/Ultra-LSNT"
+url: "https://github.com/b1ue13e/Ultra-LSNT"
+license: "MIT"
+keywords:
+  - wind power forecasting
+  - corrupted SCADA
+  - time series forecasting
+  - mixture of experts
+  - reproducibility
+preferred-citation:
+  type: article
+  title: "Controller-side feasibility guidance for wind power forecasting under corrupted SCADA"
+  authors:
+    - family-names: "Li"
+      given-names: "Junyu"
+    - family-names: "Du"
+      given-names: "Juntao"
+  journal: "Applied Energy"
+  year: 2026
+  notes: "Under review"

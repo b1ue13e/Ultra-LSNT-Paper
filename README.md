@@ -20,6 +20,8 @@ Ultra-LSNT is the model family and experiment codebase behind the paper's contro
 - `EXPERIMENTS.md` for the main experiment scripts
 - `STRUCTURE.md` for a repository map
 - `docs/README.md` for archived reports and maintainer notes
+- `CONTRIBUTING.md` for contribution and issue-reporting guidance
+- `CITATION.cff` for machine-readable citation metadata
 
 ## What is in this repository
 
