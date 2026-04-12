@@ -1,18 +1,16 @@
 # Documentation Index
 
-The `docs/` directory contains supplementary project reports retained for reference.
+The `docs/` directory keeps lower-priority material out of the repository root while still preserving useful project history.
 
-## Files in this folder
+## Main sections
 
-- `TECHNICAL_REPORT.md`
-  Internal technical notes and implementation-oriented discussion.
-- `FINAL_REPORT.md`
-  A compact project summary retained from the preparation phase.
-- `EXPERIMENT_RESULTS_MASTER_REPORT_20260303.md`
-  A longer archived experiment report.
+- `archive/`
+  Historical reports, inventories, and preparation-phase material.
+- `maintainers/`
+  Notes for keeping the GitHub release consistent over time.
 
 ## How to use this folder
 
 - Start with the root-level `README.md` if you are new to the repository.
-- Use the files in `docs/` only if you want deeper project history or archived notes.
-- Treat the root-level documentation as the authoritative public-facing guide.
+- Use `docs/archive/` when you want project history or older snapshots.
+- Use `docs/maintainers/` only when you are updating the public release.

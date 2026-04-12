@@ -30,6 +30,7 @@ It is not primarily optimized as a packaged machine-learning library.
 - `DATA.md` for the released data assets
 - `EXPERIMENTS.md` for the main scripts
 - `STRUCTURE.md` for the repository map
+- `docs/README.md` for archived material and maintainer notes
 
 ## Practical notes
 

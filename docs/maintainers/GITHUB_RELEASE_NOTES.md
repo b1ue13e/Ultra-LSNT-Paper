@@ -27,17 +27,10 @@ Some root-level CSV files are intentionally retained because older scripts in th
 ### Documentation split
 
 - Root-level markdown files are the public-facing documentation.
-- `docs/` keeps archived reports and supplementary notes.
+- `docs/archive/` keeps historical reports and inventory snapshots.
+- `docs/maintainers/` keeps lightweight release-maintenance notes.
 
-## Recommended reader flow
-
-1. Read `README.md`
-2. Follow `QUICKSTART.md`
-3. Check `DATA.md`
-4. Use `EXPERIMENTS.md` for the main scripts
-5. Use `STRUCTURE.md` to navigate the repository
-
-## Maintainer note
+## Recommended maintainer checklist
 
 When updating the public release, keep the following in sync:
 

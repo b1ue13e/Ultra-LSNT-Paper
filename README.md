@@ -19,7 +19,7 @@ Ultra-LSNT is the model family and experiment codebase behind the paper's contro
 - `DATA.md` for released datasets and split manifests
 - `EXPERIMENTS.md` for the main experiment scripts
 - `STRUCTURE.md` for a repository map
-- `docs/README.md` for archived reports and supplementary notes
+- `docs/README.md` for archived reports and maintainer notes
 
 ## What is in this repository
 
@@ -43,7 +43,7 @@ Ultra-LSNT/
 |- results/
 |  |- figures/                   Paper-facing figures
 |  `- tables/                    Reported and supporting result tables
-|- docs/                         Archived reports and internal notes
+|- docs/                         Archive and maintainer-facing notes
 |- split_manifest_80_20.json
 |- split_manifest_80_20_unified.json
 `- root-level compatibility CSV files for older scripts

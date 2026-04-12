@@ -63,7 +63,12 @@ Batch shell scripts for running larger experiment bundles or plot-generation wor
 
 ### `docs/`
 
-Supplementary internal reports and archived project notes retained for reference.
+Documentation that is useful but not important enough to keep in the repository root.
+
+- `docs/archive/`
+  Historical reports and inventory snapshots.
+- `docs/maintainers/`
+  Notes for keeping the public GitHub release tidy.
 
 ## Why there are CSV files in the repository root
 
