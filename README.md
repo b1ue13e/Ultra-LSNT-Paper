@@ -4,7 +4,7 @@
 
 **Ultra-Lightweight Sparse Neural Transformer for Controller-Side Wind Power Forecasting**
 
-> For reproducible results as presented in: *"Wind power forecasting under corrupted SCADA for edge deployment: sparse MoE with feasibility guidance"*, **Applied Energy** (2026).
+> For reproducible results as presented in: *"Controller-side feasibility guidance for wind power forecasting under corrupted SCADA"*, **Applied Energy** (2026, under review).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg?logo=pytorch)](https://pytorch.org/)
@@ -12,7 +12,7 @@
 [![Status](https://img.shields.io/badge/Status-Research%20Code-blue.svg)](#)
 [![Paper](https://img.shields.io/badge/Paper-Applied%20Energy-green.svg)](#)
 
-*Sparse MoE forecasting under corrupted SCADA for edge deployment*
+*Controller-side feasibility guidance under corrupted SCADA with Ultra-LSNT as the audited sparse carrier*
 
 [Overview](#-overview) • [Main Results](#-main-results) • [Reproducibility](#-reproducibility) • [Data](#-data-availability) • [Citation](#-citation)
 
@@ -44,9 +44,9 @@
 
 ## 📖 Overview
 
-This repository contains the code, data assets, and evaluation scripts accompanying the study:
+This repository contains the code, data assets, and evaluation scripts accompanying the study. The repository name retains the model identifier "Ultra-LSNT", while the current manuscript title emphasizes the controller-side feasibility-guidance contribution:
 
-> **"Wind power forecasting under corrupted SCADA for edge deployment: sparse MoE with feasibility guidance"**
+> **"Controller-side feasibility guidance for wind power forecasting under corrupted SCADA"**
 
 The project studies a **controller-side** forecasting setting in which models must operate on **corrupted SCADA streams** under **batch-1 latency and memory constraints**, and forecast usefulness is evaluated under a **fixed forecast-to-dispatch interface**.
 
@@ -287,8 +287,7 @@ If you use this repository or the corrupted-SCADA evaluation protocol, please ci
 
 ```bibtex
 @article{li2026ultralsnt,
-  title   = {Wind power forecasting under corrupted SCADA for edge deployment: 
-             sparse MoE with feasibility guidance},
+  title   = {Controller-side feasibility guidance for wind power forecasting under corrupted SCADA},
   author  = {Li, Junyu and Du, Juntao},
   journal = {Applied Energy},
   year    = {2026},
